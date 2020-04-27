@@ -1,11 +1,10 @@
 package spring.boot.template.mapper;
 
-import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface DataSourceMapper {
 
-    String getName();
-
-    void addShangp(@Param("shangName")String shangName);
+    List<String> getUser();
 
 }
